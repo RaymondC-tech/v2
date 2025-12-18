@@ -1,10 +1,10 @@
 import Link from "next/link";
+import PageLayout from "./layout/PageLayout";
 
 export default function Home() {
   return (
-    <main className="w-full max-w-[640px] mx-auto px-4 py-12">
-      <article className="prose prose-zinc dark:prose-invert max-w-none">
-        <h1 className="text-3xl font-semibold mb-6">Welcome, I'm Raymond</h1>
+    <PageLayout>
+      <h1 className="text-3xl font-semibold mb-6">Welcome, I'm Raymond</h1>
 
         <ul className="grid gap-2 text-base font-light">
           <li className="group flex items-start gap-3 pl-5 relative transition-all duration-200 hover:opacity-80">
@@ -107,7 +107,6 @@ export default function Home() {
             </ul>
           </li>
         </ul>
-      </article>
-      </main>
+    </PageLayout>
   );
 }
