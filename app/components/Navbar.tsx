@@ -1,12 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useTheme } from "../context/ThemeProvider";
 
 export default function Navbar() {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <nav className="w-full md:max-w-[500px] mx-auto px-4 pt-16 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+    <nav className="w-full md:max-w-[500px] mx-auto px-4 pt-16 pb-6 border-b border-zinc-900 dark:border-zinc-800">
       <div className="flex flex-wrap items-center gap-6 text-sm">
         <Link
           href="/"
-          className="font-medium text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+          className="font-medium text-zinc-900 dark:text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
         >
           raymond chan
         </Link>
@@ -14,24 +23,25 @@ export default function Navbar() {
         <div className="flex items-center gap-6 ml-auto">
           <Link
             href="/projects"
-            className="text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+            className="text-zinc-900 dark:text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
           >
             projects
           </Link>
 
-          <span className="text-zinc-400 dark:text-zinc-600">•</span>
+          <span className="text-zinc-900 dark:text-zinc-600">•</span>
 
           <Link
             href="/notes"
-            className="text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+            className="text-zinc-900 dark:text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
           >
             notes
           </Link>
           
-          <span className="text-zinc-400 dark:text-zinc-600">•</span>
+          <span className="text-zinc-900 dark:text-zinc-600">•</span>
           
           <button
-            className="text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
+            onClick={toggleTheme}
+            className="text-zinc-900 dark:text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
             aria-label="Toggle theme"
           >
           <svg

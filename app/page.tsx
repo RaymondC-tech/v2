@@ -4,7 +4,7 @@ import PageLayout from "./layout/PageLayout";
 export default function Home() {
   return (
     <PageLayout>
-      <h1 className="text-3xl font-semibold mb-6">Welcome, I'm Raymond</h1>
+      <h1 className="text-3xl font-semibold mb-6 text-zinc-900 dark:text-foreground">Welcome, I'm Raymond</h1>
 
         <ul className="grid gap-2 text-base font-light">
           <li className="group flex items-start gap-3 pl-5 relative transition-all duration-200 hover:opacity-80">

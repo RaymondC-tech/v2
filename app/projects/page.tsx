@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <PageLayout>
-      <h1 className="text-3xl font-semibold mb-6">Projects</h1>
+      <h1 className="text-3xl font-semibold mb-6 text-zinc-900 dark:text-foreground">Projects</h1>
       
       <div>
         {projects.map((project, index) => (
