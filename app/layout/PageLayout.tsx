@@ -8,6 +8,9 @@ export default function PageLayout({
       <article>
         {children}
       </article>
+      <footer className="mt-12 pt-8 text-center text-sm text-zinc-500 dark:text-zinc-500">
+        © 2025 @Raymond Chan
+      </footer>
     </main>
   );
 }
