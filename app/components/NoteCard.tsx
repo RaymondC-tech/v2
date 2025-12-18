@@ -40,7 +40,7 @@ export default function NoteCard({
             <IconComponent className="w-5 h-5" />
           </div>
           <div className="flex-1">
-            <h3 className="card-title underline">
+            <h3 className="card-title-link">
               {title}
             </h3>
             <p className="card-date">
