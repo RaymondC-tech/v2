@@ -21,7 +21,7 @@ export default function ProjectCard({
   const linkUrl = href || github;
   
   return (
-    <div className={`border-b border-zinc-200 dark:border-zinc-800 pb-6 mb-6 last:border-b-0 last:pb-0 last:mb-0 ${className || ""}`}>
+    <div className={`card-border ${className || ""}`}>
       <div className="flex items-start justify-between gap-4 mb-2">
         <div className="flex-1">
           {linkUrl ? (
@@ -29,16 +29,16 @@ export default function ProjectCard({
               href={linkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-700 dark:text-zinc-300 font-medium text-xl hover:text-zinc-900 dark:hover:text-zinc-100 underline"
+              className="card-title-link"
             >
               {title}
             </Link>
           ) : (
-            <h3 className="text-zinc-700 dark:text-zinc-300 font-medium text-xl">
+            <h3 className="card-title">
               {title}
             </h3>
           )}
-          <p className="text-zinc-500 dark:text-zinc-500 text-sm mt-1">
+          <p className="card-date">
             {date}
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function ProjectCard({
           </div>
         )}
       </div>
-      <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+      <p className="card-description">
         {description}
       </p>
     </div>

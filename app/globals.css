@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Card Styles */
+.card-border {
+  @apply border-b border-zinc-200 dark:border-zinc-800 pb-6 mb-6 last:border-b-0 last:pb-0 last:mb-0;
+}
+
+/* Title Styles */
+.card-title {
+  @apply text-zinc-700 dark:text-zinc-300 font-medium text-xl;
+}
+
+.card-title-link {
+  @apply text-zinc-700 dark:text-zinc-300 font-medium text-xl hover:text-zinc-900 dark:hover:text-zinc-100 underline;
+}
+
+/* Date Styles */
+.card-date {
+  @apply text-zinc-500 dark:text-zinc-500 text-sm mt-1;
+}
+
+/* Description Styles */
+.card-description {
+  @apply text-zinc-600 dark:text-zinc-400 leading-relaxed;
+}
