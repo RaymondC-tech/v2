@@ -10,7 +10,7 @@ export default function Home() {
           <li className="group flex items-start gap-3 pl-5 relative transition-all duration-200 hover:opacity-80">
             <div className="absolute left-0 top-[12px] w-[5px] h-[5px] rounded-full bg-zinc-700 dark:bg-zinc-300 transform transition-all duration-200 group-hover:bg-zinc-900 dark:group-hover:bg-zinc-100 group-hover:w-[6px] group-hover:h-[6px]" />
             <span className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-              CS @ UToronto with focus in technology leadership and artificial intelligence
+              CS @<Link href="https://www.utoronto.ca/" target="_blank" rel="noopener noreferrer" className="underline">UToronto</Link> with focus in technology leadership and artificial intelligence
             </span>
           </li>
 
@@ -24,12 +24,12 @@ export default function Home() {
           <li className="group flex flex-col gap-2.5 pl-5 relative transition-all duration-200 hover:opacity-80">
             <div className="absolute left-0 top-[12px] w-[5px] h-[5px] rounded-full bg-zinc-700 dark:bg-zinc-300 transform transition-all duration-200 group-hover:bg-zinc-900 dark:group-hover:bg-zinc-100 group-hover:w-[6px] group-hover:h-[6px]" />
             <span className="text-zinc-700 dark:text-zinc-300 font-medium not-italic">
-              currently
+              currently:
             </span>
             <ul className="grid gap-1.5 pl-5">
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">senior developer @uoft blueprint</span>
+                <span className="text-zinc-600 dark:text-zinc-400">senior developer @<Link href="https://uoftblueprint.org/" target="_blank" rel="noopener noreferrer" className="underline">uoft blueprint</Link></span>
               </li>
             </ul>
           </li>
@@ -42,11 +42,11 @@ export default function Home() {
             <ul className="grid gap-1.5 pl-5">
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">software developer @fairloft</span>
+                <span className="text-zinc-600 dark:text-zinc-400">software developer @<Link href="https://fairloftgolf.com/" target="_blank" rel="noopener noreferrer" className="underline">fairloft</Link></span>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">software developer @uoftMarket</span>
+                <span className="text-zinc-600 dark:text-zinc-400">software developer @<Link href="https://uoftmarket.com/" target="_blank" rel="noopener noreferrer" className="underline">uoftMarket</Link></span>
               </li>
               
             </ul>
@@ -60,15 +60,15 @@ export default function Home() {
             <ul className="grid gap-1.5 pl-5">
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">built a marketplace for Uoft students to 1,000+ users with 50,000+ views</span>
+                <span className="text-zinc-600 dark:text-zinc-400">built a <Link href="https://uoftmarket.com/" target="_blank" rel="noopener noreferrer" className="underline">marketplace</Link> for Uoft students to 1,000+ users with 50,000+ views</span>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">built out features for golf platform</span>
+                <span className="text-zinc-600 dark:text-zinc-400">built out features for <Link href="https://fairloftgolf.com/" target="_blank" rel="noopener noreferrer" className="underline">golfing platform</Link></span>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <span className="text-zinc-600 dark:text-zinc-400">created a cli tool and extention for architecture control for codebases </span>
+                <span className="text-zinc-600 dark:text-zinc-400">created a <Link href="https://github.com/qiuethan/archctl" target="_blank" rel="noopener noreferrer" className="underline">cli tool</Link> and extention for architecture control for codebases</span>
               </li>
               
             </ul>
@@ -82,25 +82,25 @@ export default function Home() {
             <ul className="grid gap-1.5 pl-5">
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <Link href="" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
+                <Link href="https://www.linkedin.com/in/rchan49/" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
                   LinkedIn
                 </Link>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <Link href="" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
+                <Link href="https://github.com/RaymondC-tech" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
                   GitHub
                 </Link>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <Link href="" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
+                <Link href="mailto:raymondch416@gmail.com" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
                   Email
                 </Link>
               </li>
               <li className="relative pl-5 transition-opacity duration-200 hover:opacity-70">
                 <span className="absolute left-0 top-0 text-zinc-500 dark:text-zinc-400 text-sm">→</span>
-                <Link href="" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
+                <Link href="https://github.com/RaymondC-tech/v2" target="_blank" rel="noopener noreferrer" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 underline">
                   Repo
                 </Link>
               </li>
@@ -108,6 +108,6 @@ export default function Home() {
           </li>
         </ul>
       </article>
-    </main>
+      </main>
   );
 }
