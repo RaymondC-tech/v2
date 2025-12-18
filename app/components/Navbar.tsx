@@ -22,7 +22,7 @@ export default function Navbar() {
           <span className="text-zinc-400 dark:text-zinc-600">•</span>
 
           <Link
-            href="/projects"
+            href="/notes"
             className="text-foreground hover:text-zinc-600 dark:hover:text-zinc-400 transition-colors"
           >
             notes
