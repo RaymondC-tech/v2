@@ -1,6 +1,7 @@
 import PageLayout from "../layout/PageLayout";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -18,6 +19,17 @@ export default function Projects() {
             github={project.github}
           />
         ))}
+      </div>
+
+      <div className="mt-8 flex justify-center">
+        <Link
+          href="https://github.com/RaymondC-tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-4 bg-zinc-800 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 font-medium rounded-xl hover:bg-zinc-900 dark:hover:bg-zinc-100 transition-colors underline"
+        >
+          View more projects on GitHub
+        </Link>
       </div>
     </PageLayout>
   );
